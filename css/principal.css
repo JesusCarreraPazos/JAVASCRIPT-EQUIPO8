@@ -1,0 +1,81 @@
+body {
+    margin: 0; /* Elimina el margen por defecto para un control total */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Establece una fuente más limpia y moderna para todo el cuerpo */
+    background-color: #f4f4f4; /* Establece un color de fondo suave */
+}
+
+.arriba {
+    background-color: #333; /* Un gris oscuro para el encabezado */
+    color: white;
+    padding: 20px 0; /* Añade padding vertical */
+    text-align: center;
+}
+
+.titulo h1 {
+    margin: 0; /* Elimina el margen por defecto del h1 */
+    font-weight: normal; /* Elimina el negritado automático para un diseño más suave */
+}
+
+.map {
+    padding: 20px 5%; /* Añade padding alrededor del mapa de prácticas */
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between; /* Espacia uniformemente las prácticas */
+    flex-wrap: wrap; /* Permite el ajuste automático en pantallas más pequeñas */
+    margin-bottom: 20px; /* Añade un margen inferior entre filas */
+}
+
+.practica {
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px 0; /* Ajusta el margen vertical para consistencia */
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados para un look más moderno */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Añade sombra para profundidad */
+    flex-basis: calc(20% - 40px); /* Calcula el ancho de cada práctica ajustando el espacio entre ellas */
+    transition: background-color 0.3s; /* Suaviza el cambio de color al pasar el mouse */
+}
+
+.a-practica {
+    color: black;
+    text-decoration: none; /* Elimina el subrayado */
+    display: block; /* Hace que el enlace llene el contenedor para un área de clic más grande */
+}
+
+.practica:hover {
+    background-color: #1f787f; /* Cambia al color en hover */
+}
+
+.abajo {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Padding similar al encabezado para simetría */
+}
+
+.a-contac {
+    color: cyan;
+    text-decoration: none;
+}
+
+.a-contac:hover {
+    color: #1f787f; /* Mantiene consistencia con el hover de las prácticas */
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .fila {
+        justify-content: center; /* Centra las prácticas en pantallas más pequeñas */
+    }
+    .practica {
+        flex-basis: 45%; /* Aumenta el tamaño en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .practica {
+        flex-basis: 90%; /* Hace que cada práctica tome casi toda la anchura en pantallas muy pequeñas */
+    }
+}

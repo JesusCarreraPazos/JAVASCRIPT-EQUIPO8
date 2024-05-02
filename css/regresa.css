@@ -1,0 +1,19 @@
+#regresar {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    padding: 10px 20px;
+    background-color: #333; /* Color de fondo oscuro para coherencia con otros elementos de navegación */
+    color: white; /* Texto blanco para contraste */
+    font-family: Arial, sans-serif; /* Fuente consistente con el resto del sitio */
+    text-decoration: none; /* Remueve el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados para un look moderno */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Sombra sutil para dar profundidad */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para efectos visuales */
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+#regresar:hover {
+    background-color: #555; /* Cambia el color al pasar el mouse para un feedback visual */
+    transform: scale(1.05); /* Ligeramente más grande al pasar el mouse para dar una sensación de interactividad */
+}
